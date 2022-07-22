@@ -4,13 +4,12 @@ def fat(n):
         result = 1
         print(result, end=" ")
         return result
-    elif(n < 7): # result smaller than 2357 (as ordered)
-        result = n * fat(n-1)
-        print(result, end=" ")
-        return result
     else:
-        result = (n * fat(n-1))%2357
-        print(result, end=" ")
+        print(1, end=" ")
+        for i in range(1, n+1):
+            result *= i
+            result %= 2357
+            print(result, end=" ")
         return result
 
 
