@@ -2,5 +2,9 @@
 n = int(input())
 clothes = input().split()
 
-duplicated = [clothe for i, clothe in enumerate(clothes) if i != clothes.index(clothe)]
+# duplicated = [clothe for i, clothe in enumerate(clothes) if i != clothes.index(clothe)]
+duplicated = []
+# just another way to do the same as older commit
+for i, clothe in enumerate(clothes):
+    if(i != clothes.index(clothe)): duplicated.append(clothe)
 print(len(duplicated))
