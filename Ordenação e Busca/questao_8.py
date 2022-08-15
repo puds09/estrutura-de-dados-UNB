@@ -28,6 +28,4 @@ for element in sorted(storage, reverse=True): print(element[-1], end=" ")
 # storage.sort(reverse=True)
 # # print(storage)
 
-# for i in range(len(storage)):
-#     print(storage[i][-1], end=" ")
 
